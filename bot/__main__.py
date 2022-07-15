@@ -182,7 +182,7 @@ help_string = f'''
 
 def bot_help(update, context):
     button = ButtonMaker()
-    button.buildbutton("Other Commands", f"/help")
+    button.buildbutton("Other Commands", f"@hydra_torrent_bot")
     reply_markup = InlineKeyboardMarkup(button.build_menu(1))
     sendMarkup(help_string, context.bot, update.message, reply_markup)
 
