@@ -179,7 +179,6 @@ help_string = f'''
 /{BotCommands.MirrorCommand}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand}</b> for more help
 
 '''
-Markup(help_string, context.bot, update.message, reply_markup)
 
 def main():
     start_cleanup()
