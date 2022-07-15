@@ -65,8 +65,8 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/Surajsharma07/leech/")
-    buttons.buildbutton("Report Group", "https://t.me/surajsharma007")
+    buttons.buildbutton("Repo", "https://www.github.com/anasty17/mirror-leech-telegram-bot")
+    buttons.buildbutton("Report Group", "https://t.me/+PRRzqHd31XY3ZWZk")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -177,7 +177,13 @@ help = telegraph.create_page(
 
 help_string = f'''
 /{BotCommands.PingCommand}: Check how long it takes to Ping the Bot
-/{BotCommands.MirrorCommand}</b> [download_url][magnet_link]: Start mirroring to Google Drive.
+/{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+/{BotCommands.UnAuthorizeCommand}: Unauthorize a chat or a user to use the bot (Can only be invoked by Owner & Sudo of the bot)
+/{BotCommands.AuthorizedUsersCommand}: Show authorized users (Only Owner & Sudo)
+/{BotCommands.AddSudoCommand}: Add sudo user (Only Owner)
+/{BotCommands.RmSudoCommand}: Remove sudo users (Only Owner)
+/{BotCommands.RestartCommand}: Restart and update the bot
+/{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
 '''
 
 def bot_help(update, context):
