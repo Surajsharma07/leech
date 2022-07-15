@@ -177,7 +177,7 @@ help = telegraph.create_page(
 
 help_string = f'''
 /{BotCommands.PingCommand}: Check how long it takes to Ping the Bot
-/{BotCommands.MirrorCommand}</b> [download_url][magnet_link]: Start mirroring to Google Drive. Send <b>/{BotCommands.MirrorCommand}</b> for more help
+/{BotCommands.MirrorCommand}</b> [download_url][magnet_link]: Start mirroring to Google Drive.
 '''
 
 def bot_help(update, context):
